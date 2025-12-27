@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reconix"
+version = "0.1.0"
+description = "Modular recon orchestrator (quick/normal/deep) with NDJSON output"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "typer>=0.12",
+  "rich>=13.7",
+  "pyyaml>=6.0"
+]
+
+
+[project.scripts]
+reconix = "reconix.cli:app"
+
+[tool.setuptools]
+packages = ["reconix"]

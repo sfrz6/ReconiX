@@ -1,0 +1,8 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+output/
+*.ndjson
+.DS_Store
+.env
