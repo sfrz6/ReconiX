@@ -12,6 +12,31 @@ reconix verify dependency check
 
 reconix config for tuning
 
+## Intalling Required Tools
+sudo apt update
+
+sudo apt install -y golang-go git nmap python3-pip
+
+echo 'export PATH="$PATH:$HOME/go/bin"' >> ~/.bashrc
+
+source ~/.bashrc
+
+go install github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
+
+go install github.com/projectdiscovery/dnsx/cmd/dnsx@latest
+
+go install github.com/projectdiscovery/httpx/cmd/httpx@latest
+
+go install github.com/projectdiscovery/katana/cmd/katana@latest
+
+go install github.com/tomnomnom/assetfinder@latest
+
+go install github.com/ffuf/ffuf@latest
+
+sudo apt install -y sublist3r
+
+sudo apt install -y wordlists
+
 ## Install
 git clone https://github.com/sfrz6/ReconiX.git
 
@@ -22,7 +47,6 @@ python3 -m venv venv
 source venv/bin/activate
 
 pip install -e .
-
 
 ## Usage
 reconix verify
