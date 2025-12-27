@@ -13,15 +13,11 @@ reconix verify dependency check
 reconix config for tuning
 
 ## Install
-git clone https://github.com/sfrz6/ReconiX.git
+sudo apt install pipx
 
-cd ReconiX
+pipx ensurepath
 
-python3 -m venv venv
-
-source venv/bin/activate
-
-pip install -e .
+pipx install git+https://github.com/sfrz6/ReconiX.git
 
 ## Usage
 reconix verify
