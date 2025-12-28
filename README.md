@@ -12,7 +12,7 @@ reconix verify dependency check
 
 reconix config for tuning
 
-## Intalling Required Tools
+## Installing Required Tools
 sudo apt update
 
 sudo apt install -y golang-go git nmap python3-pip
