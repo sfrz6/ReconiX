@@ -1,0 +1,2 @@
+[console_scripts]
+reconix = reconix.cli:app

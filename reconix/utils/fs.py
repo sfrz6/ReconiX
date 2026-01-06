@@ -1,5 +1,12 @@
 import os
 from pathlib import Path
+import json
+
+def append_ndjson(path: str, obj: dict) -> None:
+    Path(path).parent.mkdir(parents=True, exist_ok=True)
+    with open(path, "a", encoding="utf-8") as f:
+        f.write(json.dumps(obj, ensure_ascii=False) + "\n")
+
 
 def ensure_dir(path: str) -> str:
     Path(path).mkdir(parents=True, exist_ok=True)
